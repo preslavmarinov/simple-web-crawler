@@ -15,9 +15,9 @@ It demonstrates crawling a single web page while respecting robots.txt rules.
 ## Functionality
 - Checks robots.txt before crawling
 - Fetches a single web page
-- Extracts the page title and H1 headings
+- Extracts the page title, meta description, H1, H2, H3 headings and paragraphs
 - Displays crawled data in the console
-- Perform sentiment analysis on data crawled and print analysis in console
+- Performs sentiment analysis on data crawled and prints analysis in console
 
 ## Setup and Run
 

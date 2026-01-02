@@ -11,7 +11,8 @@ async function canCrawl(url: string): Promise<boolean | undefined> {
     const robots = robotsParser(robotsUrl, response.data);
 
     return robots.isAllowed(url, "*");
-  } catch {
+  } catch (err: any) {
+    console.error("Failed to fetch robots.txt:", err.message);
     return true;
   }
 }
